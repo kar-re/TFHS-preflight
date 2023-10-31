@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.58835804, g: 0.61641246, b: 0.64143157, a: 1}
+  m_IndirectSpecularColor: {r: 0.58835787, g: 0.6164135, b: 0.6414306, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -306,6 +306,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9216664188530690177, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
         type: 3}
       propertyPath: m_RootOrder
@@ -361,9 +366,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6837096955820514470, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6185818576703982407, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -992197109257232715, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -876858545089398410, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
@@ -371,7 +391,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: 4002622159678512776, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376247482778093833, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7419581066304277290, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760876859896489897, guid: 66b5361b89dee3b4b8cbded16d9d3a1a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
