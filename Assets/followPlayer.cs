@@ -22,7 +22,7 @@ public class followPlayer : MonoBehaviour
         Vector3 forwardVec =  go.transform.TransformPoint(offset);
         transform.LookAt(new Vector3(go.transform.position.x, transform.position.y, go.transform.position.z));
         transform.Rotate(Vector3.up, 180);
-        transform.position = Vector3.Lerp(prevPos, forwardVec, 0.99f * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, forwardVec, 2f * Time.deltaTime);
         prevPos = transform.position;
         
     }

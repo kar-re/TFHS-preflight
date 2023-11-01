@@ -23,7 +23,6 @@ public class GuideManager : MonoBehaviour
     {
         spawnedObject = null;
         arCam = GameObject.Find("AR Camera").GetComponent<Camera>();
-        canvasFadeout.fadeCanvasPub();
     }
 
     // Update is called once per frame

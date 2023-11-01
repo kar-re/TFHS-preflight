@@ -23,6 +23,7 @@ public class CanvasFadeout : MonoBehaviour
             canvasGroup.alpha = Mathf.Lerp(alphaColor, 1.0f - alphaColor, elapsedTime / fadeDuration);
             yield return null;
         }
+        Debug.Log("Setting alpha to " + (1.0f - alphaColor));
         canvasGroup.alpha = 1.0f - alphaColor;
     }
 }
