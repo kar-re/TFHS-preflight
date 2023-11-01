@@ -47,10 +47,10 @@ public class GuideManager : MonoBehaviour
                 }
             }
             else if (Input.GetTouch(0).phase == TouchPhase.Moved && spawnedObject) {
-                spawnedObject.transform.position = hits[0].pose.position;
+                // spawnedObject.transform.position = hits[0].pose.position;
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended) {
-                spawnedObject = null;
+                // spawnedObject = null;
             } 
         }
     }
