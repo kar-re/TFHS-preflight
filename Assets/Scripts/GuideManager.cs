@@ -22,6 +22,7 @@ public class GuideManager : MonoBehaviour
     void Start()
     {
         spawnedObject = null;
+        spawnablePrefab.SetActive(false);
         arCam = GameObject.Find("AR Camera").GetComponent<Camera>();
     }
 
@@ -41,7 +42,11 @@ public class GuideManager : MonoBehaviour
                         spawnedObject = hit.collider.gameObject;
                     }
                     else {
-                        spawnedObject = Instantiate(spawnablePrefab, hits[0].pose.position, hits[0].pose.rotation);
+                        spawnablePrefab.transform.position = hits[0].pose.position;
+                        spawnablePrefab.transform.rotation = hits[0].pose.rotation;
+                        spawnablePrefab.SetActive(true);
+                        spawnedObject = spawnablePrefab;
+                        // spawnedObject = Instantiate(spawnablePrefab, hits[0].pose.position, hits[0].pose.rotation);
                         canvasFadeout.fadeCanvasPub();
                     }
                 }
