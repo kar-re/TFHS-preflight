@@ -7,6 +7,7 @@ public class GoalManagerTemp : MonoBehaviour
     [SerializeField]
     List<GameObject> checks;
     int current = 0;
+    public Transform currentTransform;
     void Start() {
         checks = new List<GameObject>();
         for(int i = 0; i < transform.childCount; ++i){
@@ -19,12 +20,14 @@ public class GoalManagerTemp : MonoBehaviour
             check.SetActive(false);
         }
         checks[current].SetActive(true);
+        currentTransform = checks[current].transform;
     }
 
     public void next() {
         checks[current].SetActive(false);
         current++;
         checks[current].SetActive(true);
+        currentTransform = checks[current].transform;
     }
    
 }

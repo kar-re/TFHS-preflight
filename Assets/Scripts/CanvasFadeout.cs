@@ -8,13 +8,12 @@ public class CanvasFadeout : MonoBehaviour
         fadeCanvasPub();
     }
     [SerializeField]
-    Canvas canvas;
+    CanvasGroup canvasGroup;
     public void fadeCanvasPub() {
         StartCoroutine(fadeCanvas());
     }
 
     IEnumerator fadeCanvas() {
-        var canvasGroup = canvas.GetComponent<CanvasGroup>();
         var alphaColor = canvasGroup.alpha;
         float fadeDuration = 1f;
         float elapsedTime = 0f;
