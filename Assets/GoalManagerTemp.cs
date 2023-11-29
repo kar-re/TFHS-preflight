@@ -8,6 +8,12 @@ public class GoalManagerTemp : MonoBehaviour
     List<GameObject> checks;
     int current = 0;
     void Start() {
+        var children = transform.GetComponentsInChildren<Transform>();
+        checks = new List<GameObject>();
+        foreach (Transform child in children) {
+            checks.Add(child.gameObject);
+        }
+        
         foreach (GameObject check in checks) {
             check.SetActive(false);
         }
