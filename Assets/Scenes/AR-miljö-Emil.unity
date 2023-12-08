@@ -1918,7 +1918,7 @@ PrefabInstance:
     - target: {fileID: 4545943064274504709, guid: 0afe495a010a2874da57f5f4e46fef09,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0afe495a010a2874da57f5f4e46fef09, type: 3}
@@ -5506,7 +5506,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675196039}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a9c0c84e6a8e2d4428608f1325b8de90, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 32a6e69e49bc8f04b90c8382d07673a3, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -5522,14 +5522,14 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.659
+  - 0.444
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -5540,13 +5540,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675196039}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.8878181, z: -0, w: -0.46019465}
+  m_LocalPosition: {x: 1090.9115, y: -1125.0895, z: 1115.1968}
+  m_LocalScale: {x: 999.9999, y: 596.2319, z: 999.9999}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 2066425009}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808890666
 GameObject:
@@ -6514,7 +6514,6 @@ GameObject:
   - component: {fileID: 2066425013}
   - component: {fileID: 2066425012}
   - component: {fileID: 2066425011}
-  - component: {fileID: 2066425010}
   m_Layer: 5
   m_Name: 13
   m_TagString: Untagged
@@ -6537,6 +6536,7 @@ RectTransform:
   - {fileID: 1408109829}
   - {fileID: 1830598610}
   - {fileID: 277431101}
+  - {fileID: 1675196041}
   m_Father: {fileID: 331630880}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -177.346, z: 0}
@@ -6545,41 +6545,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1451, y: 811}
   m_SizeDelta: {x: 857.4461, y: 327.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!328 &2066425010
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066425008}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a9c0c84e6a8e2d4428608f1325b8de90, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
 --- !u!114 &2066425011
 MonoBehaviour:
   m_ObjectHideFlags: 0
